@@ -12,12 +12,15 @@
  * @package kn-webwork_2
  */
 
-get_header(); ?>
+get_header(); 
+$heroImage = get_field('hero_image');
+?>
+
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<section id="hero">
-				<div class="container">
+			<section id="hero" style="background-image: url(<?php echo $heroImage['url']; ?>);">
+				<div class="container hero-container">
 
 					<h1 id="introduction">
 						Las Vegas Grown 
@@ -28,14 +31,14 @@ get_header(); ?>
 					<button id="hero-cta">GET STARTED</button>
 
 					<div class="nav-arrow-down">
-						<span class="arrow-cap">Our Difference</a>
+						<span class="arrow-cap">Our Difference</span>
 						<icon class="fa fa-angle-double-down"></icon>
 					</div>
 
 					<ul id="side-controls">
-						<li>Our Difference</li>
-						<li>Our Work</li>
-						<li>Get Started</li>
+						<li>&ndash; Our Difference</li>
+						<li>&ndash; Our Work</li>
+						<li>&ndash; Get Started</li>
 					</ul>
 				</div><!-- container -->
 			</section>

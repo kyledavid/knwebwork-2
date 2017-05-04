@@ -747,3 +747,107 @@ object {
 
 .gallery-caption {
   display: block; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("/fonts/Montserrat-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url("/fonts/Montserrat-Light.ttf"); }
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url("/fonts/Montserrat-Bold.ttf"); }
+
+#masthead {
+  background-color: #333; }
+
+.site-branding {
+  float: left; }
+
+.site-logo {
+  font-size: 3.25em;
+  margin: 0; }
+  .site-logo a, .site-logo a:link, .site-logo a:hover, .site-logo a:active, .site-logo a:visited {
+    color: #fffcf7;
+    text-decoration: none; }
+
+.logo-first {
+  font-family: 'Montserat-Bold', sans-serif;
+  font-weight: 700; }
+
+.logo-second {
+  font-family: 'Montserat-Light', sans-serif;
+  font-weight: 300; }
+
+#site-navigation {
+  clear: none;
+  float: right;
+  width: initial;
+  line-height: 5.55em; }
+
+.nav-menu li {
+  float: left;
+  color: #fffcf7;
+  font-size: 1.5em; }
+  .nav-menu li a, .nav-menu li a:link, .nav-menu li a:hover, .nav-menu li a:active, .nav-menu li a:visited {
+    color: #fffcf7;
+    text-decoration: none;
+    margin-left: 1em; }
+  .nav-menu li:last-of-type a, .nav-menu li:last-of-type a:link, .nav-menu li:last-of-type a:hover, .nav-menu li:last-of-type a:active, .nav-menu li:last-of-type a:visited {
+    color: #eb625f; }
+
+#hero {
+  text-align: center;
+  background-size: cover;
+  padding-bottom: 90px; }
+
+#introduction {
+  font-family: 'Montserrat-Light', sans-serif;
+  font-size: 3.6em;
+  color: #ffca56;
+  letter-spacing: .07em;
+  padding-top: 90px;
+  margin-top: 0; }
+  #introduction .intro-pt-2 {
+    line-height: 1.5em;
+    font-size: 1.2em;
+    color: #fffcf7;
+    letter-spacing: .02em; }
+
+#hero-cta {
+  font-family: 'Montserrat-Light', sans-serif;
+  font-size: 1.8em;
+  color: #fffcf7;
+  letter-spacing: .14em;
+  padding: .7em 2.1em;
+  background: none;
+  border: 2px solid #eb625f;
+  border-radius: .7em;
+  margin-top: 105px; }
+
+#side-controls {
+  text-align: left;
+  font-size: 21px;
+  color: #fffcf7;
+  position: absolute;
+  right: 0;
+  top: 350px;
+  list-style-type: none; }
+
+.hero-container {
+  position: relative; }
+
+.nav-arrow-down {
+  position: relative;
+  color: #fffcf7;
+  margin-top: 100px; }
+  .nav-arrow-down icon {
+    font-size: 6em; }
+  .nav-arrow-down .arrow-cap {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100px;
+    margin-left: -50px; }
