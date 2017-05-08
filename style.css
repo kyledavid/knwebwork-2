@@ -1,3 +1,6 @@
+body {
+  font-family: 'Montserrat', sans-serif; }
+
 /*
 Theme Name: kn-webwork 2
 Theme URI: http://underscores.me/
@@ -226,8 +229,7 @@ select,
 textarea {
   color: #404040;
   font-family: sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 14px;
   line-height: 1.5; }
 
 h1,
@@ -863,7 +865,7 @@ object {
   background-size: cover; }
 
 #introduction {
-  padding-top: 157.6px;
+  padding-top: 80px;
   margin-top: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -956,3 +958,57 @@ object {
 a:visited {
     margin-left: .6em;
     color: #ffca56; }
+
+#primary {
+  min-height: 100vh; }
+
+#main {
+  margin-top: 77.6px; }
+
+#title-area {
+  background-image: url("http://localhost/wp/KN-Webwork2/wp-content/uploads/2017/05/mountain-pic-01-1.png");
+  background-size: cover;
+  height: 40vh;
+  background-position-y: -50px;
+  color: #fffcf7;
+  text-align: center; }
+
+#page-title {
+  padding-top: 1.42em;
+  font-size: 4em; }
+
+#contact-form {
+  background-color: #fff;
+  padding: 2em;
+  color: #555;
+  margin: 4.32em auto;
+  max-width: 20em;
+  text-align: left;
+  font-size: 1.3em;
+  box-shadow: -2px 2px 20px -5px #333; }
+  #contact-form input,
+  #contact-form textarea {
+    display: block;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    color: #888;
+    width: 100%; }
+    #contact-form input:focus,
+    #contact-form textarea:focus {
+      outline: 1px solid #ffca56; }
+  #contact-form textarea {
+    padding-top: 0;
+    padding-bottom: 4em; }
+  #contact-form .submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    background-color: #ffca56;
+    font-size: 1em;
+    text-align: center;
+    padding: .4em 1.4;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: .06em; }
