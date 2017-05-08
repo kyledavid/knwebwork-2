@@ -14,11 +14,16 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'kn-webwork-2' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'kn-webwork-2' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'kn-webwork-2' ), 'kn-webwork-2', '<a href="https://automattic.com/" rel="designer">Kyle Steinle</a>' ); ?>
-		</div><!-- .site-info -->
+		<div class="container">
+			<div class="site-info">
+				Copyright &copy; 2017 K&amp;N Webwork
+				<div class="socials">
+					<a href="www.knwebwork.com"><i class="fa fa-facebook"></i></a>
+					<a href="www.knwebwork.com"><i class="fa fa-twitter"></i></a>
+					<a href="www.knwebwork.com"><i class="fa fa-google-plus"></i></a>
+				</div>
+			</div><!-- .site-info -->
+		</div><!-- container -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

@@ -748,37 +748,33 @@ object {
 .gallery-caption {
   display: block; }
 
-@font-face {
-  font-family: 'Montserrat';
-  src: url("/fonts/Montserrat-Regular.ttf"); }
-
-@font-face {
-  font-family: 'Montserrat-Light';
-  src: url("/fonts/Montserrat-Light.ttf"); }
-
-@font-face {
-  font-family: 'Montserrat-Bold';
-  src: url("/fonts/Montserrat-Bold.ttf"); }
-
 #masthead {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
   background-color: #333; }
 
 .site-branding {
   float: left; }
 
 .site-logo {
-  font-size: 3.25em;
-  margin: 0; }
-  .site-logo a, .site-logo a:link, .site-logo a:hover, .site-logo a:active, .site-logo a:visited {
+  margin: 0;
+  font-size: 3.25em; }
+  .site-logo a,
+  .site-logo a:link,
+  .site-logo a:hover,
+  .site-logo a:active,
+  .site-logo a:visited {
     color: #fffcf7;
     text-decoration: none; }
 
 .logo-first {
-  font-family: 'Montserat-Bold', sans-serif;
-  font-weight: 700; }
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400; }
 
 .logo-second {
-  font-family: 'Montserat-Light', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300; }
 
 #site-navigation {
@@ -789,65 +785,174 @@ object {
 
 .nav-menu li {
   float: left;
-  color: #fffcf7;
-  font-size: 1.5em; }
-  .nav-menu li a, .nav-menu li a:link, .nav-menu li a:hover, .nav-menu li a:active, .nav-menu li a:visited {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4em;
+  color: #fffcf7; }
+  .nav-menu li a,
+  .nav-menu li a:link,
+  .nav-menu li a:hover,
+  .nav-menu li a:active,
+  .nav-menu li a:visited {
+    margin-left: 1em;
     color: #fffcf7;
-    text-decoration: none;
-    margin-left: 1em; }
-  .nav-menu li:last-of-type a, .nav-menu li:last-of-type a:link, .nav-menu li:last-of-type a:hover, .nav-menu li:last-of-type a:active, .nav-menu li:last-of-type a:visited {
+    text-decoration: none; }
+  .nav-menu li:last-of-type a,
+  .nav-menu li:last-of-type a:link,
+  .nav-menu li:last-of-type a:hover,
+  .nav-menu li:last-of-type a:active,
+  .nav-menu li:last-of-type a:visited {
     color: #eb625f; }
+
+.nav-underline {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  right: 50%;
+  border-top: 2px solid #fffcf7;
+  transition: right 400ms, left 400ms; }
+
+.nav-underline.active {
+  right: .2em;
+  left: 1.2em; }
+
+@media (max-width: 700px) {
+  .site-logo {
+    line-height: 77.6px; }
+  .logo-second {
+    display: none; }
+  .menu-toggle {
+    background-color: transparent;
+    float: right;
+    padding: 0;
+    border: none;
+    color: #fff;
+    height: initial;
+    font-size: 3em; }
+    .menu-toggle:focus {
+      outline: 0; }
+  #site-navigation {
+    float: none;
+    text-align: center; }
+    #site-navigation .fa-times-circle {
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg); }
+  #site-navigation.toggled {
+    min-height: 100vh; }
+    #site-navigation.toggled .fa-times-circle {
+      -webkit-transform: rotate(0);
+      transform: rotate(0); }
+    #site-navigation.toggled ul {
+      display: block;
+      clear: both;
+      font-size: 3.4em; }
+      #site-navigation.toggled ul li {
+        display: block;
+        float: none; }
+        #site-navigation.toggled ul li a,
+        #site-navigation.toggled ul li a:link,
+        #site-navigation.toggled ul li a:visited,
+        #site-navigation.toggled ul li a:hover,
+        #site-navigation.toggled ul li a:active {
+          margin-left: 0;
+          margin-top: .3em; }
+    #site-navigation.toggled .nav-underline {
+      display: none; } }
 
 #hero {
   text-align: center;
-  background-size: cover;
-  padding-bottom: 90px; }
+  background-size: cover; }
 
 #introduction {
-  font-family: 'Montserrat-Light', sans-serif;
+  padding-top: 157.6px;
+  margin-top: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
   font-size: 3.6em;
-  color: #ffca56;
   letter-spacing: .07em;
-  padding-top: 90px;
-  margin-top: 0; }
+  color: #ffca56; }
   #introduction .intro-pt-2 {
-    line-height: 1.5em;
     font-size: 1.2em;
-    color: #fffcf7;
-    letter-spacing: .02em; }
+    line-height: 1.5em;
+    letter-spacing: .02em;
+    color: #fffcf7; }
 
 #hero-cta {
-  font-family: 'Montserrat-Light', sans-serif;
-  font-size: 1.8em;
-  color: #fffcf7;
-  letter-spacing: .14em;
   padding: .7em 2.1em;
-  background: none;
+  margin-top: 160px;
   border: 2px solid #eb625f;
   border-radius: .7em;
-  margin-top: 105px; }
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.4em;
+  letter-spacing: .24em;
+  color: #fffcf7;
+  background: transparent;
+  transition: background-color 400ms ease-in-out; }
 
 #side-controls {
-  text-align: left;
-  font-size: 21px;
-  color: #fffcf7;
+  display: none;
   position: absolute;
   right: 0;
   top: 350px;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4em;
+  color: #fffcf7;
   list-style-type: none; }
 
 .hero-container {
-  position: relative; }
+  position: relative;
+  min-height: 100vh; }
 
 .nav-arrow-down {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*margin-top: 160px;*/
   color: #fffcf7;
-  margin-top: 100px; }
+  font-family: "Montserrat", sans-serif; }
   .nav-arrow-down icon {
     font-size: 6em; }
   .nav-arrow-down .arrow-cap {
     position: absolute;
-    top: 0;
+    top: -10px;
     left: 50%;
     width: 100px;
-    margin-left: -50px; }
+    margin-left: -50px;
+    font-size: .9em; }
+
+@media (max-width: 1200px) {
+  #hero-cta {
+    margin-top: 58.5px; } }
+
+@media (max-width: 700px) {
+  #hero-cta {
+    margin-top: 108.5px; }
+  #hero {
+    padding-bottom: 0; }
+  #introduction {
+    padding-top: 117px;
+    font-size: 3.0em; }
+  .nav-arrow-down {
+    display: none; } }
+
+@media (max-width: 527px) {
+  #hero-cta {
+    margin-top: 58.5px; } }
+
+#colophon {
+  background-color: #333;
+  padding: 10px 0;
+  color: #fffcf7;
+  line-height: 2em; }
+
+.socials {
+  float: right;
+  font-size: 1.7em; }
+  .socials a,
+  .socials a:link
+a:visited {
+    margin-left: .6em;
+    color: #ffca56; }

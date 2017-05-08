@@ -26,14 +26,15 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="container">
 			<div class="site-branding">
-					<p class="site-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span class="logo-first">K&amp;N|</span><span class="logo-second">Webwork</span</a></p>
+					<p class="site-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span class="logo-first">K&amp;N</span><span class="logo-second">|Webwork</span></a></p>
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kn-webwork-2' ); ?></button>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><icon class="fa fa-times-circle"></icon></button>
 				<?php wp_nav_menu( array( 
 					'theme_location' => 'primary', 
-					'menu_id' => 'primary-menu' 
+					'menu_id' => 'primary-menu',
+					'after'		=> '<hr class="nav-underline"/>',
 				) ); ?>
 			</nav><!-- #site-navigation -->
 		</container>
