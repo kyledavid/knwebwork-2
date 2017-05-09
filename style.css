@@ -933,7 +933,7 @@ body {
   .nav-arrow-down a:visited,
   .nav-arrow-down a:hover {
     color: #fffcf7; }
-  .nav-arrow-down icon {
+  .nav-arrow-down .fa {
     font-size: 6em; }
   .nav-arrow-down .arrow-cap {
     position: absolute;

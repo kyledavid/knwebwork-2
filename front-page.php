@@ -33,7 +33,7 @@ $heroImage = get_field('hero_image');
 					<div class="nav-arrow-down">
 						<a href="#our-difference">
 							<span class="arrow-cap">Our Difference</span>
-							<icon class="fa fa-angle-double-down"></icon>
+							<span class="fa fa-angle-double-down"></span>
 						</a>
 					</div>
 

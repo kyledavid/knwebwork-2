@@ -21,15 +21,15 @@ get_header(); ?>
 
 					<form id="contact-form">
 						<div>
-					        <label for="name"><icon class="fa fa-user"></icon> Name</label>
+					        <label for="name"><span class="fa fa-user"></span> Name</label>
 					        <input type="text" id="name" name="user_name">
 					    </div>
 					    <div>
-					        <label for="mail"><icon class="fa fa-envelope-o"></icon> E-mail</label>
+					        <label for="mail"><span class="fa fa-envelope-o"></span> E-mail</label>
 					        <input type="email" id="mail" name="user_mail">
 					    </div>
 					    <div>
-					        <label for="msg"><icon class="fa fa-comments-o"></icon> Message</label>
+					        <label for="msg"><span class="fa fa-comments-o"></span> Message</label>
 					        <textarea id="msg" name="user_message"></textarea>
 					    </div>
 					    <div class="button">
