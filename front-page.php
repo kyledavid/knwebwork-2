@@ -28,11 +28,13 @@ $heroImage = get_field('hero_image');
 						<span class="intro-pt-2">Custom Built Apps and Websites.</span>
 					</h1>
 
-					<button id="hero-cta">GET STARTED</button>
+					<a href="<?php echo get_stylesheet_directory_uri() . '/contact'; ?>" id="hero-cta">GET STARTED</a>
 
 					<div class="nav-arrow-down">
-						<span class="arrow-cap">Our Difference</span>
-						<icon class="fa fa-angle-double-down"></icon>
+						<a href="#our-difference">
+							<span class="arrow-cap">Our Difference</span>
+							<icon class="fa fa-angle-double-down"></icon>
+						</a>
 					</div>
 
 					<ul id="side-controls">
@@ -41,6 +43,12 @@ $heroImage = get_field('hero_image');
 						<li>&ndash; Get Started</li>
 					</ul>
 				</div><!-- container -->
+			</section>
+			<section id="our-difference">
+				<div class="container">
+					<h1>Our Difference</h1>
+					<p>Coming Soon</p>
+				</div>
 			</section>
 
 <?php

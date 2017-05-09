@@ -1,6 +1,3 @@
-body {
-  font-family: 'Montserrat', sans-serif; }
-
 /*
 Theme Name: kn-webwork 2
 Theme URI: http://underscores.me/
@@ -750,6 +747,15 @@ object {
 .gallery-caption {
   display: block; }
 
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Header Styles
+--------------------------------------------------------------*/
 #masthead {
   position: absolute;
   left: 0;
@@ -838,6 +844,8 @@ object {
     #site-navigation .fa-times-circle {
       -webkit-transform: rotate(45deg);
       transform: rotate(45deg); }
+  .nav-menu {
+    padding-top: .2em; }
   #site-navigation.toggled {
     min-height: 100vh; }
     #site-navigation.toggled .fa-times-circle {
@@ -860,6 +868,9 @@ object {
     #site-navigation.toggled .nav-underline {
       display: none; } }
 
+/*--------------------------------------------------------------
+# Front Page Styles
+--------------------------------------------------------------*/
 #hero {
   text-align: center;
   background-size: cover; }
@@ -879,6 +890,8 @@ object {
     color: #fffcf7; }
 
 #hero-cta {
+  display: inline-block;
+  text-decoration: none;
   padding: .7em 2.1em;
   margin-top: 160px;
   border: 2px solid #eb625f;
@@ -908,13 +921,18 @@ object {
 
 .nav-arrow-down {
   position: absolute;
-  bottom: 0;
+  bottom: 40px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  /*margin-top: 160px;*/
-  color: #fffcf7;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  /*margin-top: 160px;*/ }
+  .nav-arrow-down a,
+  .nav-arrow-down a:link,
+  .nav-arrow-down a:active,
+  .nav-arrow-down a:visited,
+  .nav-arrow-down a:hover {
+    color: #fffcf7; }
   .nav-arrow-down icon {
     font-size: 6em; }
   .nav-arrow-down .arrow-cap {
@@ -924,6 +942,9 @@ object {
     width: 100px;
     margin-left: -50px;
     font-size: .9em; }
+
+#our-difference {
+  min-height: 50vh; }
 
 @media (max-width: 1200px) {
   #hero-cta {
@@ -944,6 +965,9 @@ object {
   #hero-cta {
     margin-top: 58.5px; } }
 
+/*--------------------------------------------------------------
+# Footer Styles
+--------------------------------------------------------------*/
 #colophon {
   background-color: #333;
   padding: 10px 0;
@@ -958,18 +982,26 @@ object {
 a:visited {
     margin-left: .6em;
     color: #ffca56; }
+  .socials a:hover {
+    color: #337ab7; }
 
+/*--------------------------------------------------------------
+# Page Styles
+--------------------------------------------------------------*/
 #primary {
   min-height: 100vh; }
 
 #main {
   margin-top: 77.6px; }
 
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
 #title-area {
   background-image: url("http://localhost/wp/KN-Webwork2/wp-content/uploads/2017/05/mountain-pic-01-1.png");
   background-size: cover;
-  height: 40vh;
   background-position-y: -50px;
+  height: 40vh;
   color: #fffcf7;
   text-align: center; }
 
@@ -979,21 +1011,21 @@ a:visited {
 
 #contact-form {
   background-color: #fff;
-  padding: 2em;
-  color: #555;
-  margin: 4.32em auto;
   max-width: 20em;
+  padding: 2em;
+  margin: 4.32em auto;
+  color: #555;
   text-align: left;
   font-size: 1.3em;
   box-shadow: -2px 2px 20px -5px #333; }
   #contact-form input,
   #contact-form textarea {
     display: block;
+    width: 100%;
     border: none;
     border: 1px solid #ccc;
     border-radius: 0;
-    color: #888;
-    width: 100%; }
+    color: #888; }
     #contact-form input:focus,
     #contact-form textarea:focus {
       outline: 1px solid #ffca56; }
@@ -1002,13 +1034,15 @@ a:visited {
     padding-bottom: 4em; }
   #contact-form .submit {
     display: block;
+    background-color: #ffca56;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
-    background-color: #ffca56;
+    padding: .5em 1.4em;
     font-size: 1em;
     text-align: center;
-    padding: .4em 1.4;
     color: #fff;
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: .06em; }
+    letter-spacing: .06em;
+    transition: background-color 300ms; }
+    #contact-form .submit:hover {
+      background-color: #ffe2a2; }

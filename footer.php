@@ -18,9 +18,9 @@
 			<div class="site-info">
 				Copyright &copy; 2017 K&amp;N Webwork
 				<div class="socials">
-					<a href="www.knwebwork.com"><i class="fa fa-facebook"></i></a>
-					<a href="www.knwebwork.com"><i class="fa fa-twitter"></i></a>
-					<a href="www.knwebwork.com"><i class="fa fa-google-plus"></i></a>
+					<a href="https://www.facebook.com/knwebwork/" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/knwebwork" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://plus.google.com/108251766062994997160" target="_blank"><i class="fa fa-google-plus"></i></a>
 				</div>
 			</div><!-- .site-info -->
 		</div><!-- container -->
