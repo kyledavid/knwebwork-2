@@ -187,3 +187,38 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
+function contact_mail_script() {
+	if ( is_page( 'contact' ) ) {
+		$submitted = $_POST['submitted'];
+
+		if ($submitted):
+
+		$name = $_POST['user_name'];
+		$email = $_POST['user_mail'];
+		$message = $_POST['user_message'];
+		$to_mail = 'kyledavid022@gmail.com, vivalaibanez@gmail.com, nealh.dev@gmail.com, knwebwork@gmail.com';
+
+
+		$name = htmlspecialchars($name);
+		$message = htmlspecialchars($message); 
+		$email   = filter_var($email , FILTER_SANITIZE_EMAIL);
+
+			if( $name && $message & $email ):
+				$message = "
+
+				Name: $name
+				Email: $email
+
+				Message: $message
+
+				";
+
+				mail($to_mail, $subject, $message);
+			endif;
+
+		endif;
+	}
+	
+}
+
+add_action( 'wp_head', 'contact_mail_script' );

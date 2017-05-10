@@ -785,6 +785,9 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300; }
 
+.menu-toggle {
+  height: 77.6px; }
+
 #site-navigation {
   clear: none;
   float: right;
@@ -834,7 +837,6 @@ body {
     padding: 0;
     border: none;
     color: #fff;
-    height: initial;
     font-size: 3em; }
     .menu-toggle:focus {
       outline: 0; }
@@ -864,7 +866,7 @@ body {
         #site-navigation.toggled ul li a:hover,
         #site-navigation.toggled ul li a:active {
           margin-left: 0;
-          margin-top: .3em; }
+          margin-top: .1em; }
     #site-navigation.toggled .nav-underline {
       display: none; } }
 
@@ -917,6 +919,7 @@ body {
 
 .hero-container {
   position: relative;
+  height: 720px;
   min-height: 100vh; }
 
 .nav-arrow-down {
@@ -956,7 +959,7 @@ body {
   #hero {
     padding-bottom: 0; }
   #introduction {
-    padding-top: 117px;
+    padding-top: 58.5px;
     font-size: 3.0em; }
   .nav-arrow-down {
     display: none; } }
@@ -985,6 +988,13 @@ a:visited {
   .socials a:hover {
     color: #337ab7; }
 
+@media (max-width: 700px) {
+  .socials a,
+  .socials a:link
+a:visited {
+    margin-left: .2em;
+    color: #ffca56; } }
+
 /*--------------------------------------------------------------
 # Page Styles
 --------------------------------------------------------------*/
@@ -998,10 +1008,11 @@ a:visited {
 # Contact
 --------------------------------------------------------------*/
 #title-area {
-  background-image: url("http://localhost/wp/KN-Webwork2/wp-content/uploads/2017/05/mountain-pic-01-1.png");
+  background-image: url("http://www.knwebwork.com/wp-content/uploads/2016/03/mountain-pic-01.png");
   background-size: cover;
-  background-position-y: -50px;
   height: 40vh;
+  background-position-y: -50px;
+  background-repeat: no-repeat;
   color: #fffcf7;
   text-align: center; }
 
@@ -1046,3 +1057,79 @@ a:visited {
     transition: background-color 300ms; }
     #contact-form .submit:hover {
       background-color: #ffe2a2; }
+
+@media (max-width: 700px) {
+  #title-area {
+    height: auto;
+    background-size: 40; } }
+
+/*--------------------------------------------------------------
+# Team Page Styles
+--------------------------------------------------------------*/
+#meet {
+  text-align: center;
+  font-family: serif;
+  font-size: 72px;
+  color: #555; }
+
+.initials {
+  color: #ccc; }
+
+.leading-word {
+  font-size: 2em; }
+
+.bio-figure img {
+  width: 100%; }
+
+.bio-caption {
+  margin-top: .5em;
+  text-align: center;
+  font-size: 2em;
+  font-family: serif; }
+
+.profile-links {
+  margin-top: .5em;
+  display: -webkit-box;
+  display: flex; }
+  .profile-links a {
+    -webkit-box-flex: 0;
+    flex: 0; }
+  .profile-links a,
+  .profile-links a:link,
+  .profile-links a:visited,
+  .profile-links a:hover,
+  .profile-links a:active {
+    text-decoration: underline; }
+  .profile-links .spacer {
+    -webkit-box-flex: 1;
+    flex: 1; }
+
+.biography {
+  margin-top: 1.6em;
+  line-height: 1.6em; }
+
+.second-team-row {
+  clear: both;
+  margin-top: 3em;
+  padding-bottom: 3em; }
+
+.team-container .row {
+  position: relative; }
+
+.background-shape {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: 0; }
+  .background-shape.triangle {
+    left: 20px;
+    width: 100%;
+    height: 40%;
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, 20% 10%, 20% 0%);
+    clip-path: polygon(100% 0%, 100% 100%, 20% 10%, 20% 0%);
+    background-color: #92d7ff; }
+  .background-shape.rectangle {
+    top: 5px;
+    background-color: #f2a19e;
+    height: 140px;
+    width: 50%; }

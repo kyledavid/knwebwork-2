@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages
  *
@@ -15,11 +16,12 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main contact" role="main">
 				<section id="title-area">
 					<h1 id="page-title">Contact</h1>
 
-					<form id="contact-form">
+					<form id="contact-form" action="<?php the_permalink ?>" method="post">
+						<input type="hidden" name="submitted" value="1">
 						<div>
 					        <label for="name"><span class="fa fa-user"></span> Name</label>
 					        <input type="text" id="name" name="user_name">
@@ -33,12 +35,11 @@ get_header(); ?>
 					        <textarea id="msg" name="user_message"></textarea>
 					    </div>
 					    <div class="button">
-					      <button type="submit" class="submit">Submit</button>
+					      <button type="submit" value="Submit" class="submit">Submit</button>
 					    </div>
 					</form>
 
 				</section>
-				
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
