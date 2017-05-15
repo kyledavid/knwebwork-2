@@ -12,19 +12,20 @@ get_header(); ?>
 					</div>
 					<div class="col col-sm-offset-1 col-sm-4">
 						<div class="figure bio-figure">
-							<img src="http://www.knwebwork.com/wp-content/uploads/2017/05/kyle-steinle-2-e1494448447940.jpg" alt="kyle-steinle"/>
+							<img src="http://www.knwebwork.com/wp-content/uploads/2017/05/kyle-steinle-2-e1494448447940.jpg" alt="Las Vegas web developer Kyle Steinle" title="Las Vegas web developer Kyle Steinle"/>
+							<div class="fig-caption bio-caption">
+								Kyle Steinle
+							</div>
 						</div>
-						<div class="fig-caption bio-caption">
-							Kyle Steinle
-						</div>
+						
 						<div class="profile-links">
-							<a href="#">Twitter</a>
+							<a href="https://www.linkedin.com/in/kyle-steinle-0b4023108/" target="_blank">LinkedIn</a>
 							<span class="spacer"></span>
-							<a href="#">Twitter</a>
+							<a href="https://www.instagram.com/fedora_melianenko/" target="_blank">Instagram</a>
 							<span class="spacer"></span>
-							<a href="#">Twitter</a>
+							<a href="https://github.com/kyledavid" target="_blank">GitHub</a>
 							<span class="spacer"></span>
-							<a href="#">Twitter</a>
+							<a href="https://twitter.com/knwebwork" target="_blank">Twitter</a>
 						</div>
 					</div>
 					
@@ -53,20 +54,21 @@ get_header(); ?>
 					</div>
 					<div class="col col-sm-offset-1 col-sm-4">
 						<div class="figure bio-figure">
-							<img src="http://www.knwebwork.com/wp-content/uploads/2017/05/neal-hill-e1494448950873.jpg" alt="neal-hill"/>
-						</div>
-						<div class="fig-caption bio-caption">
-							Neal Hill
+							<img src="http://www.knwebwork.com/wp-content/uploads/2017/05/neal-hill-e1494448950873.jpg" alt="Las Vegas web developer Neal Hill" title="Las Vegas web developer Neal Hill"/>
+
+							<div class="fig-caption bio-caption">
+								Neal Hill
+							</div>
 						</div>
 
 						<div class="profile-links">
-							<a href="#">Twitter</a>
+							<a href="https://www.linkedin.com/in/nealahill/" target="_blank">LinkedIn</a>
 							<span class="spacer"></span>
-							<a href="#">Twitter</a>
+							<a href="https://www.instagram.com/neal_hill/" target="_blank">Instagram</a>
 							<span class="spacer"></span>
-							<a href="#">Twitter</a>
+							<a href="https://github.com/nahill" target="_blank">GitHub</a>
 							<span class="spacer"></span>
-							<a href="#">Twitter</a>
+							<a href="https://twitter.com/knwebwork" target="_blank">Twitter</a>
 						</div>
 					</div>
 				</div><!-- row -->

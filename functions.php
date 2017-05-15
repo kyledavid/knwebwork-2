@@ -144,6 +144,10 @@ function kn_webwork_2_scripts() {
 
 	wp_enqueue_style( 'montserrat', 'https://fonts.googleapis.com/css?family=Montserrat:300,400', false, '4.7.0', 'all' );
 
+	if ( is_page( 'team' ) ) {
+		wp_enqueue_style( 'libre-baskerville', 'https://fonts.googleapis.com/css?family=Libre+Baskerville', fales, '4.7.0', 'all' );
+	}
+
 	wp_enqueue_style( 'kn-webwork-2-style', get_stylesheet_uri(), false, filemtime( get_stylesheet_directory() . '/style.css' ) );
 
 	wp_enqueue_script( 'nav-hover', get_template_directory_uri() . '/js/nav-hover.js', array('jquery'), get_stylesheet_directory() . '/style.css', true);
@@ -222,3 +226,30 @@ function contact_mail_script() {
 }
 
 add_action( 'wp_head', 'contact_mail_script' );
+
+function add_ga_tracking() {
+	echo "<script>
+  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  			ga('create', 'UA-74202208-1', 'auto');
+  			ga('send', 'pageview');
+
+		</script>";
+}
+
+add_action( 'wp_head', 'add_ga_tracking' );
+
+function add_tag_mngr() {
+	echo "<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-K29ZPB3');</script>
+		<!-- End Google Tag Manager -->";
+}
+
+add_action( 'wp_head', 'add_tag_mngr' );
