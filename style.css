@@ -1131,6 +1131,9 @@ a:visited {
 .team-container .row {
   position: relative; }
 
+.kyle-row {
+  overflow: hidden; }
+
 .background-shape {
   position: absolute;
   top: 100px;
@@ -1148,3 +1151,18 @@ a:visited {
     background-color: #f2a19e;
     height: 140px;
     width: 55%; }
+
+@media (max-width: 768px) {
+  .background-shape.rectangle {
+    top: 3px;
+    width: 100%; }
+  .profile-links {
+    padding: 0 1.5em;
+    font-size: 1.5em; }
+  .biography {
+    margin-top: 2.5em; } }
+
+@media (max-width: 475px) {
+  .profile-links {
+    margin-top: 21px;
+    font-size: 1em; } }
