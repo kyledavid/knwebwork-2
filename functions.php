@@ -138,6 +138,8 @@ add_action( 'widgets_init', 'kn_webwork_2_widgets_init' );
  */
 function kn_webwork_2_scripts() {
 
+	wp_enqueue_style( 'kn-webwork-2-style', get_stylesheet_uri(), false, filemtime( get_stylesheet_directory() . '/style.css' ) );
+
 	wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', false, '3.3.7', 'all' );
 
 	wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', false, '4.7.0', 'all' );
@@ -145,14 +147,16 @@ function kn_webwork_2_scripts() {
 	wp_enqueue_style( 'montserrat', 'https://fonts.googleapis.com/css?family=Montserrat:300,400', false, '4.7.0', 'all' );
 
 	if ( is_page( 'team' ) ) {
-		wp_enqueue_style( 'libre-baskerville', 'https://fonts.googleapis.com/css?family=Libre+Baskerville', fales, '4.7.0', 'all' );
+		wp_enqueue_style( 'libre-baskerville', 'https://fonts.googleapis.com/css?family=Libre+Baskerville', false, '4.7.0', 'all' );
 	}
 
-	wp_enqueue_style( 'kn-webwork-2-style', get_stylesheet_uri(), false, filemtime( get_stylesheet_directory() . '/style.css' ) );
+	wp_enqueue_script( 'nav-scripts', get_template_directory_uri() . '/js/nav-scripts.js', array('jquery'), get_stylesheet_directory() . '/style.css', true);
 
-	wp_enqueue_script( 'nav-hover', get_template_directory_uri() . '/js/nav-hover.js', array('jquery'), get_stylesheet_directory() . '/style.css', true);
+	wp_enqueue_script( 'ga-events', get_template_directory_uri() . '/js/ga-events.js', array('jquery'), get_stylesheet_directory() . '/style.css', true);
 
-	wp_enqueue_script( 'nav-toggle', get_template_directory_uri() . '/js/nav-toggle.js', array('jquery'), get_stylesheet_directory() . '/style.css', true);
+	if ( is_front_page() ) {
+		wp_enqueue_script( 'front-page-scripts', get_template_directory_uri() . '/js/front-page-scripts.js', array('jquery'), get_stylesheet_directory() . '/style.css', true);
+	}
 
 	wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), '3.3.7', true );
 

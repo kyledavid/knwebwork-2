@@ -20,7 +20,7 @@ get_header(); ?>
 				<section id="title-area">
 					<h1 id="page-title">Contact</h1>
 
-					<form id="contact-form" action="<?php the_permalink ?>" method="post">
+					<form id="contact-form" action="<?php the_permalink; ?>" method="post">
 						<input type="hidden" name="submitted" value="1">
 						<div>
 					        <label for="name"><span class="fa fa-user"></span> Name</label>

@@ -794,24 +794,24 @@ body {
   width: initial;
   line-height: 5.55em; }
 
-.nav-menu li {
+.menu li {
   float: left;
   font-family: "Montserrat", sans-serif;
   font-size: 1.4em;
   color: #fffcf7; }
-  .nav-menu li a,
-  .nav-menu li a:link,
-  .nav-menu li a:hover,
-  .nav-menu li a:active,
-  .nav-menu li a:visited {
+  .menu li a,
+  .menu li a:link,
+  .menu li a:hover,
+  .menu li a:active,
+  .menu li a:visited {
     margin-left: 1em;
     color: #fffcf7;
     text-decoration: none; }
-  .nav-menu li:last-of-type a,
-  .nav-menu li:last-of-type a:link,
-  .nav-menu li:last-of-type a:hover,
-  .nav-menu li:last-of-type a:active,
-  .nav-menu li:last-of-type a:visited {
+  .menu li:last-of-type a,
+  .menu li:last-of-type a:link,
+  .menu li:last-of-type a:hover,
+  .menu li:last-of-type a:active,
+  .menu li:last-of-type a:visited {
     color: #eb625f; }
 
 .nav-underline {
