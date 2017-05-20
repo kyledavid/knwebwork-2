@@ -45,7 +45,7 @@ get_header(); ?>
 					</div>
 					<div class="col col-md-offset-1 col-md-4 col-sm-5 col-sm-push-6">
 						<div class="figure bio-figure">
-							<img src="http://www.knwebwork.com/wp-content/uploads/2017/05/neal-hill-e1494448950873.jpg" alt="Las Vegas web developer Neal Hill" title="Las Vegas web developer Neal Hill"/>
+							<img src="http://www.knwebwork.com/wp-content/uploads/2017/05/neal-hill-vegas-developer.jpg" alt="Las Vegas web developer Neal Hill" title="Las Vegas web developer Neal Hill"/>
 
 							<div class="fig-caption bio-caption">
 								Neal Hill

@@ -19,7 +19,7 @@ $heroImage = get_field('hero_image');
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<section id="hero" style="background-image: url(<?php echo $heroImage['url']; ?>);">
+			<section id="hero" style="background-image: url(<?php echo $heroImage['url']; ?>); background-position: 0 0; background-color: #333">
 				<div class="container hero-container">
 
 					<h1 id="introduction">
