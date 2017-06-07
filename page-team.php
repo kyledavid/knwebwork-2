@@ -38,7 +38,7 @@ get_header(); ?>
 							</p>
 
 							<p>
-							When he's not coding, Kyle enjoys cooking but mostly eating, difficult video games (think Dark Souls), and rock climbing. You'll most often find him ambling through Kraft Mountain, crashpad strapped to his back, searching for his next big *send.
+							When he's not coding, Kyle enjoys cooking but mostly eating, difficult video games (think Dark Souls), and rock climbing, more specifically bouldering. You'll most often find him ambling through Kraft Mountain, crashpad strapped to his back, searching for his next big *send.
 							</p>
 
 							<p>
