@@ -18,7 +18,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main contact" role="main">
 				<section id="title-area">
-					<h1 id="page-title">Contact</h1>
+					<h1 class="page-title contact-title">Contact</h1>
 
 					<form id="contact-form" action="<?php the_permalink; ?>" method="post">
 						<input type="hidden" name="submitted" value="1">

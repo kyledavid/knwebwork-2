@@ -138,9 +138,9 @@ add_action( 'widgets_init', 'kn_webwork_2_widgets_init' );
  */
 function kn_webwork_2_scripts() {
 
-	wp_enqueue_style( 'kn-webwork-2-style', get_stylesheet_uri(), false, filemtime( get_stylesheet_directory() . '/style.css' ) );
-
 	wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', false, '3.3.7', 'all' );
+
+	wp_enqueue_style( 'kn-webwork-2-style', get_stylesheet_uri(), false, filemtime( get_stylesheet_directory() . '/style.css' ) );
 
 	wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', false, '4.7.0', 'all' );
 
@@ -201,27 +201,55 @@ function contact_mail_script() {
 
 		if ($submitted):
 
-		$name = $_POST['user_name'];
-		$email = $_POST['user_mail'];
-		$message = $_POST['user_message'];
-		$to_mail = 'kyledavid022@gmail.com, vivalaibanez@gmail.com, nealh.dev@gmail.com, knwebwork@gmail.com';
+			$flagged = false;
+			$reason = '';
+
+			$name = $_POST['user_name'];
+			if (!ctype_alpha($name) || strlen($name) > 100) {
+				$flagged = true;
+				$reason = $reason . 'name,';
+			}
+
+			$originalMail = $_POST['user_mail'];
+			$safeMail = filter_var($originalMail, FILTER_SANITIZE_EMAIL);
+
+			if ($originalMail !== $safeMail || !filter_var($originalMail, FILTER_VALIDATE_EMAIL)) {
+				$flagged = true;
+				$reason = $reason . ' email,';
+			}
+
+			$message = $_POST['user_message'];
+
+			if (!ctype_alnum($message)) {
+				$flagged = true;
+				$reason = $reason . ' message,';
+			}
 
 
-		$name = htmlspecialchars($name);
-		$message = htmlspecialchars($message); 
-		$email   = filter_var($email , FILTER_SANITIZE_EMAIL);
+			$to_mail = 'kyledavid022@gmail.com';
 
-			if( $name && $message & $email ):
+
+			if( $name && $message && $originalMail &&  $flagged === false):
 				$message = "
 
 				Name: $name
-				Email: $email
+				Email: $originalMail
 
 				Message: $message
 
 				";
 
 				mail($to_mail, $subject, $message);
+			else: 
+				$message = "
+				Flagged for: $reason
+				Name: $name
+				Email: $originalMail
+
+				Message: $message
+
+				";
+				mail($to_mail, 'you got flagged', $message);
 			endif;
 
 		endif;

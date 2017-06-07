@@ -1013,6 +1013,12 @@ a:visited {
 #main {
   margin-top: 77.6px; }
 
+.page-title {
+  text-align: center;
+  padding-top: .4em;
+  margin-bottom: 0;
+  font-size: 4em; }
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -1025,9 +1031,8 @@ a:visited {
   color: #fffcf7;
   text-align: center; }
 
-#page-title {
-  padding-top: 1.42em;
-  font-size: 4em; }
+.contact-title {
+  padding-top: 1.42em; }
 
 #contact-form {
   background-color: #fff;
@@ -1167,3 +1172,42 @@ a:visited {
   .profile-links {
     margin-top: 21px;
     font-size: 1em; } }
+
+#portfolio-items {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-top: 4em; }
+
+.port-item {
+  display: -webkit-box;
+  display: flex;
+  min-width: 32%;
+  max-width: 32%;
+  max-height: 242px;
+  position: relative;
+  background-color: green;
+  margin-bottom: 1.6em; }
+
+.port-overlay {
+  position: absolute;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 500ms; }
+
+.port-item:hover .port-overlay {
+  opacity: 1; }
+
+.port-caption {
+  text-align: center;
+  line-height: 242px;
+  margin: 0;
+  color: #ffca56; }
