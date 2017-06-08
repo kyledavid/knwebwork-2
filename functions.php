@@ -171,6 +171,11 @@ function kn_webwork_2_scripts() {
 add_action( 'wp_enqueue_scripts', 'kn_webwork_2_scripts' );
 
 /**
+  * Add post type for Portfolio Items
+  */
+require_once 'inc/cpt-portfolio-item.php';
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
@@ -283,5 +288,3 @@ function add_tag_mngr() {
 		})(window,document,'script','dataLayer','GTM-K29ZPB3');</script>
 		<!-- End Google Tag Manager -->";
 }
-
-add_action( 'wp_head', 'add_tag_mngr' );

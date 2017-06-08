@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages
+ * The template for displaying Portfolio Items
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -19,12 +19,29 @@ get_header(); ?>
 			<div class="container">
 				<h1 class="page-title">Our Work</h1>
 				<section id="portfolio-items">
-					<a class="port-item" href="https://codepen.io/kyledavid/full/owNaVz" target="_blank">
-						<img class="p-screenshot" src="http://www.knwebwork.com/wp-content/uploads/2017/06/javascript-drag-and-drop-e1496854167592.jpg"/>
-						<div class="port-overlay">
-							<h3 class="port-caption">Vanilla JS Drag and Drop</h3>
-						</div>
-					</a>
+					<?php
+					if ( have_posts() ) : 
+
+						/* Start the Loop */
+						while ( have_posts() ) : the_post(); ?>
+
+							<a class="port-item" href="<?php echo get_field('portfolio_link');?>" target="_blank">
+								<?php the_post_thumbnail('full', ['class' => 'p-screenshot']); ?>
+								<div class="port-overlay">
+									<?php the_title( '<h3 class="port-caption">', '</h3>'); ?>
+								</div>
+
+						<?php 
+						endwhile;
+
+						the_posts_navigation();
+
+					else :
+
+						get_template_part( 'template-parts/content', 'none' );
+
+					endif; ?>
+				
 				</section>
 
 			</div>
