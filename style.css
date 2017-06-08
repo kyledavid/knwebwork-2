@@ -1187,12 +1187,13 @@ a:visited {
   justify-content: space-between;
   margin-top: 4em; }
 
+#portfolio-items::after {
+  content: "";
+  width: 364px; }
+
 .port-item {
-  display: -webkit-box;
-  display: flex;
-  min-width: 364px;
-  max-width: 32%;
-  max-height: 242px;
+  width: 364px;
+  height: 242px;
   position: relative;
   background-color: green;
   margin-bottom: 1.6em; }
@@ -1215,3 +1216,26 @@ a:visited {
   line-height: 242px;
   margin: 0;
   color: #ffca56; }
+
+@media (max-width: 1200px) {
+  .port-item {
+    width: 451px;
+    height: 300.6px; }
+  .port-caption {
+    line-height: 300.6px; } }
+
+@media (max-width: 1000px) {
+  #portfolio-items {
+    justify-content: space-around; }
+  .port-item {
+    width: 500px;
+    height: 333px; }
+  .port-caption {
+    line-height: 333px; } }
+
+@media (max-width: 650px) {
+  .port-item {
+    width: 367px;
+    height: 244px; }
+  .port-caption {
+    line-height: 244px; } }

@@ -30,7 +30,7 @@ get_header(); ?>
 								<div class="port-overlay">
 									<?php the_title( '<h3 class="port-caption">', '</h3>'); ?>
 								</div>
-
+							</a>
 						<?php 
 						endwhile;
 
