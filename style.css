@@ -1190,7 +1190,7 @@ a:visited {
 .port-item {
   display: -webkit-box;
   display: flex;
-  min-width: 32%;
+  min-width: 364px;
   max-width: 32%;
   max-height: 242px;
   position: relative;
