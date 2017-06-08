@@ -1192,6 +1192,7 @@ a:visited {
   width: 364px; }
 
 .port-item {
+  overflow: hidden;
   width: 364px;
   height: 242px;
   position: relative;
