@@ -34,7 +34,7 @@ get_header(); ?>
 							<p><span class="leading-word">Kyle Steinle</span> has been in the web dev game from an early age, having built his first site back in the days of Geocities and free .tk domains. Those were dark times, but he carried on with only a mininum of mental scarring (though he is haunted by a recurring dream of blinking marquees). Preferring the front-end side of things, Kyle has a high level of skill when it comes to building modern, responsive websites, especially on the Wordpress platform. He is also an avid student of Javascript and has especially enjoyed experiments within the React framework.
 							</p>
 							<p>
-							Possessing a secondary interest in design (he designed and coded this entire site after all) Kyle has taken this perspective into his programming work. Its not enough for him to make code that simply works, instead, he strives for the ideal that someone that could hardly code at all would be able to look at his work and understand what's going on. His code tells a story, through variables and function names as well semantic use of HTML elements and CSS classes, that illuminates its intent and makes it supremely easy to understand and maintain.
+							Possessing a secondary interest in design (he designed and coded this entire site after all) Kyle has taken this perspective into his programming work. Its not enough for him to make code that simply works, instead, he strives for the ideal that someone that could hardly code at all would be able to look at his work and understand what's going on. His code tells a story, through variables and function names as well semantic use of HTML elements and CSS classes, that illuminates its intent and makes it supremely easy to understand.
 							</p>
 
 							<p>
