@@ -30,7 +30,7 @@ $heroImage = get_field('hero_image');
 
 					<a href="<?php echo get_stylesheet_directory_uri() . '/contact'; ?>" id="hero-cta">GET STARTED</a>
 
-					<div class="nav-arrow-down">
+					<div class="nav-arrow-down under-construction">
 						<a href="#our-difference">
 							<span class="arrow-cap">Our Difference</span>
 							<span class="fa fa-angle-double-down"></span>
@@ -44,7 +44,7 @@ $heroImage = get_field('hero_image');
 					</ul>
 				</div><!-- container -->
 			</section>
-			<section id="our-difference">
+			<section id="our-difference" class="under-construction">
 				<div class="container">
 					<h1>Our Difference</h1>
 					<p>Coming Soon</p>
