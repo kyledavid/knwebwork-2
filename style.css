@@ -1256,3 +1256,6 @@ h2.entry-title a:active, #secondary a,
 
 h2.entry-title a:hover, #secondary a:hover, .entry-meta a:hover {
   color: #92d7ff; }
+
+a.print-button {
+  float: right; }

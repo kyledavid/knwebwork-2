@@ -21,6 +21,7 @@
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php kn_webwork_2_posted_on(); ?>
+			<a href="#" class="print-button fa fa-print"></a>
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>

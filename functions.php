@@ -142,6 +142,8 @@ function kn_webwork_2_scripts() {
 
 	wp_enqueue_style( 'kn-webwork-2-style', get_stylesheet_uri(), false, filemtime( get_stylesheet_directory() . '/style.css' ) );
 
+	wp_enqueue_style( 'kn-webwork-print', get_stylesheet_directory_uri() . '/CSS/print.css', false, filemtime( get_stylesheet_directory() . '/CSS/print.css' ), 'print' );
+
 	wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', false, '4.7.0', 'all' );
 
 	wp_enqueue_style( 'montserrat', 'https://fonts.googleapis.com/css?family=Montserrat:300,400', false, '4.7.0', 'all' );
@@ -151,6 +153,7 @@ function kn_webwork_2_scripts() {
 	}
 
 	wp_enqueue_script( 'nav-scripts', get_template_directory_uri() . '/js/nav-scripts.js', array('jquery'), get_stylesheet_directory() . '/style.css', true);
+	wp_enqueue_script( 'print-script', get_template_directory_uri() . '/js/print.js', array('jquery'), get_stylesheet_directory() . '/style.css', true);
 
 	wp_enqueue_script( 'ga-events', get_template_directory_uri() . '/js/ga-events.js', array('jquery'), get_stylesheet_directory() . '/style.css', true);
 

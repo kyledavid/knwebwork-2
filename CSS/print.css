@@ -1,0 +1,7 @@
+body {
+	visibility: hidden;
+}
+
+.printable {
+	visibility: initial;
+}
