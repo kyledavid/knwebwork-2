@@ -11,8 +11,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main container" role="main">
-			<div class="row">
-				<div class="col col-md-9">
+			<div class="row printable">
+				<div class="col col-md-9 printable">
 					<?php
 					if ( have_posts() ) : ?>
 

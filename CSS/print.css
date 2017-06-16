@@ -1,7 +1,14 @@
-body {
+body,
+.not-printable,
+.entry-meta,
+.entry-footer  {
 	visibility: hidden;
 }
 
 .printable {
 	visibility: initial;
 }
+
+a[href]:after {
+    content: "";
+  }
