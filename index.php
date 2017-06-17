@@ -19,6 +19,9 @@ get_header(); ?>
 			<div class="row">
 				<div class="col col-md-8">
 
+					<h1 class="page-title page-title-blog">Blog</h1>
+					<hr class="blog-rule"/>
+
 					<?php
 					if ( have_posts() ) :
 

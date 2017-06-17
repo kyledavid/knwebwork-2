@@ -18,14 +18,19 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div class="container">
 				<h1 class="page-title">Our Work</h1>
-				<section id="portfolio-items">
+				<div class="mix-controls">
+					<button type="button">All</button>
+					<button type="button">Wordpress</button>
+					<button type="button">Javascript</button>
+				</div>
+				<section id="portfolio-items" class="mix-container">
 					<?php
 					if ( have_posts() ) : 
 
 						/* Start the Loop */
 						while ( have_posts() ) : the_post(); ?>
 
-							<a class="port-item" href="<?php echo get_field('portfolio_link');?>" target="_blank">
+							<a class="mix port-item" href="<?php echo get_field('portfolio_link');?>" target="_blank">
 								<?php the_post_thumbnail('full', ['class' => 'p-screenshot']); ?>
 								<div class="port-overlay">
 									<?php the_title( '<h3 class="port-caption">', '</h3>'); ?>

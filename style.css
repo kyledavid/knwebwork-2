@@ -1260,5 +1260,18 @@ h2.entry-title a:active, #secondary a,
 h2.entry-title a:hover, #secondary a:hover, .entry-meta a:hover {
   color: #92d7ff; }
 
-a.print-button {
+.page-title-blog {
+  text-align: left; }
+
+.blog-rule {
+  height: 2px;
+  margin-bottom: 2em; }
+
+aside#secondary {
+  padding-top: 60px; }
+
+article.post {
+  padding-bottom: 4em; }
+
+span.comments-link {
   float: right; }

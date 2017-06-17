@@ -161,6 +161,11 @@ function kn_webwork_2_scripts() {
 		wp_enqueue_script( 'front-page-scripts', get_template_directory_uri() . '/js/front-page-scripts.js', array('jquery'), get_stylesheet_directory() . '/style.css', true);
 	}
 
+	if ( is_archive() ) {
+		wp_enqueue_script( 'mixitup', get_template_directory_uri() . '/mixitup/mixitup.min.js', array(), get_stylesheet_directory() . '/style.css', true);
+		wp_enqueue_script( 'mix-portfolio', get_template_directory_uri() . '/js/mix-portfolio.js', array('mixitup', 'jquery'), get_stylesheet_directory() . '/style.css', true);
+	}
+
 	wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), '3.3.7', true );
 
 	wp_enqueue_script( 'kn-webwork-2-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
