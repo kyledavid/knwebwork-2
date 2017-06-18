@@ -22,7 +22,6 @@ get_header(); ?>
 					<button class="mc-button active" type="button" data-filter='all'>All</button>
 					<button class="mc-button" type="button" data-filter='wordpress'>Wordpress</button>
 					<button class="mc-button" type="button" data-filter='javascript'>Javascript</button>
-					<button class="mc-button" type="button" data-filter='none'>None</button>
 				</div>
 				<section id="portfolio-items" class="mix-container">
 					<?php

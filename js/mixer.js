@@ -42,7 +42,7 @@
                 var firstTax = firstBox.dataset.tax;
                 var secondTax = secondBox.dataset.tax;
 
-                return firstTax.charAt(0) > secondTax.charAt(0);
+                return firstTax.charAt(0) < secondTax.charAt(0);
             });
 
             mixArray.forEach(function(item) {
@@ -77,15 +77,21 @@
                 return item.dataset.tax != rawFilter;
             }); 
 
-            $(filteredItems).each(function(i, item) {
-                $(item).fadeIn();
-            });
-
 
             $(otherItems).each(function(i, item) {
                 $(item).fadeOut();
             });
 
+            fadeInFiltered(filteredItems);
+
+        }
+
+        function fadeInFiltered(filteredItems) {
+            $(filteredItems).each(function(i, item) {
+                setTimeout(function() {
+                    $(item).fadeIn();
+                }, 400);
+            });
         }
 
         function hideAllItems() {
@@ -100,9 +106,7 @@
             
             var mixItems = document.querySelectorAll('.mix');
 
-            $(mixItems).each(function(i, item) {
-                $(item).fadeIn();
-            });
+            fadeInFiltered(mixItems);
         }
         
     });
