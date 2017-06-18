@@ -14,6 +14,14 @@
         }
 
         function setUpMixer() {
+
+            var container = document.getElementById('portfolio-items');
+            var containerHeight = container.offsetHeight;
+
+            console.log(containerHeight);
+
+            container.style.minHeight = containerHeight + 'px';
+
             attachButtonEvents();
             sortContainerItems();
         }
