@@ -19,10 +19,10 @@ get_header(); ?>
 			<div class="container">
 				<h1 class="page-title">Our Work</h1>
 				<div class="mix-controls">
-					<button type="button" data-filter='all'>All</button>
-					<button type="button" data-filter='ruby'>Ruby</button>
-					<button type="button" data-filter='javascript'>Javascript</button>
-					<button type="button" data-filter='none'>None</button>
+					<button class="mc-button active" type="button" data-filter='all'>All</button>
+					<button class="mc-button" type="button" data-filter='wordpress'>Wordpress</button>
+					<button class="mc-button" type="button" data-filter='javascript'>Javascript</button>
+					<button class="mc-button" type="button" data-filter='none'>None</button>
 				</div>
 				<section id="portfolio-items" class="mix-container">
 					<?php
@@ -42,7 +42,7 @@ get_header(); ?>
 
 							?> 
 
-							<a class="mix port-item" href="<?php echo get_field('portfolio_link');?>" target="_blank" data-tax="<?php echo $term; ?>">
+							<a class="mix port-item <?php echo $term; ?>" href="<?php echo get_field('portfolio_link');?>" target="_blank" data-tax="<?php echo $term; ?>">
 								<?php the_post_thumbnail('full', ['class' => 'p-screenshot']); ?>
 								<div class="port-overlay">
 									<?php the_title( '<h3 class="port-caption">', '</h3>'); ?>

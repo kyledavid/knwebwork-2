@@ -1221,6 +1221,27 @@ a:visited {
   margin: 0;
   color: #ffca56; }
 
+.mix-controls {
+  margin-top: 2em; }
+
+.mc-button {
+  background: none;
+  padding: .2em 1.5em;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  transition: all 400ms ease-in-out; }
+  .mc-button:hover {
+    background-color: #eb625f;
+    color: #fff;
+    box-shadow: -2px 2px 12px 1px #aaa;
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px); }
+
+.mc-button.active {
+  background-color: #eb625f;
+  color: #fff; }
+
 @media (max-width: 1200px) {
   .port-item {
     width: 451px;

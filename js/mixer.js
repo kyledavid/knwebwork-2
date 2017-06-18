@@ -1,14 +1,35 @@
-(function( $ ){
+(function( $ ) {
 
     $(document).ready(function() {
 
-        var controlButtons = document.querySelector('.mix-controls').querySelectorAll('button');
+        setUpMixer();
         
-        controlButtons.forEach(function(button) {
-            button.addEventListener('mouseup', filterItems);
-        });
 
-        sortContainerItems();
+        function removeActiveClass() {
+            var controlButtons = document.querySelector('.mix-controls').querySelectorAll('button');
+
+            controlButtons.forEach(function(button) {
+                button.classList.remove('active');
+            })
+        }
+
+        function setUpMixer() {
+            attachButtonEvents();
+            sortContainerItems();
+        }
+
+        function attachButtonEvents() {
+
+            var controlButtons = document.querySelector('.mix-controls').querySelectorAll('button');
+            
+            controlButtons.forEach(function(button) {
+                button.addEventListener('mousedown', function() {
+                    filterItems(button.dataset.filter);
+                    removeActiveClass();
+                    this.classList.add('active');
+                });
+            });
+        }
 
         /* Sort all items in a .mix-container alphabetically by taxonomy data */
 
@@ -31,39 +52,48 @@
 
         /* determine how to filter mix items */
 
-        function filterItems() {
+        function filterItems(filter) {
 
-            var filter = this.dataset.filter;
+            var filterString = '[data-tax="' + filter + '"]';
 
             if (filter === 'all') {
                 showAllItems();
             } else if (filter === 'none') {
-                applyFilter('.mix');
+                hideAllItems();
             } else {
-                applyFilter(filter);
+                applyFilter(filterString, filter);
             }   
 
         }
 
         /* Hide all items with the target filter data */
 
-        function applyFilter(filter) {
+        function applyFilter(filterString, rawFilter) {
 
             var mixItems = document.querySelectorAll('.mix');
-            var filteredItems = $(mixItems).filter(filter);
+            var filteredItems = $(mixItems).filter(filterString);
 
             var otherItems = $(mixItems).filter(function(i, item) {
-                console.log(item.classList.contains(filter.substr(1)));
-                return !item.classList.contains(filter.substr(1));
-            });
+                return item.dataset.tax != rawFilter;
+            }); 
 
             $(filteredItems).each(function(i, item) {
+                $(item).fadeIn();
+            });
+
+
+            $(otherItems).each(function(i, item) {
                 $(item).fadeOut();
             });
 
-            $(otherItems).each(function(i, item) {
-                $(item).fadeIn();
-            })
+        }
+
+        function hideAllItems() {
+            var mixItems = document.querySelectorAll('.mix');
+
+            $(mixItems).each(function(i, item) {
+                $(item).fadeOut();
+            });
         }
 
         function showAllItems() {
@@ -76,4 +106,4 @@
         }
         
     });
-})(jQuery);
+})( jQuery );
