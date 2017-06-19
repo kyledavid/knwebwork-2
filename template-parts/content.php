@@ -11,14 +11,34 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'printable' ); ?>>
 	<header class="entry-header">
+
+		
+
 		<?php
+			if ( has_post_thumbnail() ) {
+				if ( is_single() ) {
+					echo '<div class="thumbnail-container">';
+					the_post_thumbnail();
+					echo '</div>';
+				} else {
+					echo '<div class="thumbnail-container"><a href="' . get_permalink() . '">';
+					the_post_thumbnail();
+					echo '</a></div>';
+				}
+				
+			}
+		?>
+		
+		<?php
+
 		if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
-		if ( 'post' === get_post_type() ) : ?>
+		if ( 'post' === get_post_type() ) :  ?>
+			
 		<div class="entry-meta">
 			<?php kn_webwork_2_posted_on(); ?>
 			<a href="#" class="print-button fa fa-print" title="print post"></a>

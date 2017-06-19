@@ -1022,6 +1022,15 @@ a:visited {
 .under-construction {
   display: none; }
 
+@media print {
+  @page {
+    size: 330mm 427mm;
+    margin: 14mm; }
+  .container {
+    width: 1170px; }
+  a[href]:after {
+    content: "" !important; } }
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -1282,7 +1291,8 @@ h2.entry-title a:hover, #secondary a:hover, .entry-meta a:hover {
   color: #92d7ff; }
 
 .page-title-blog {
-  text-align: left; }
+  text-align: left;
+  font-size: 3em; }
 
 .blog-rule {
   height: 2px;
@@ -1296,3 +1306,20 @@ article.post {
 
 span.comments-link {
   float: right; }
+
+.thumbnail-container {
+  max-height: 300px;
+  overflow: hidden;
+  margin-top: 3em; }
+
+.entry-title {
+  margin-top: 1em; }
+
+.entry-content {
+  margin-top: 0; }
+  .entry-content h2 {
+    font-size: 1.9em;
+    margin-top: 1em;
+    margin-bottom: 1em; }
+  .entry-content p {
+    font-size: 1.14em; }

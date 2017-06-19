@@ -4,6 +4,17 @@ body,
 .entry-footer  {
 	visibility: hidden;
 }
+#main {
+	margin-top: 0;
+}
+
+#comments,
+#masthead,
+.post-navigation,
+.page-title-blog,
+footer {
+	display: none;
+}
 
 .printable {
 	visibility: initial;
