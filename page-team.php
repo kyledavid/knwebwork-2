@@ -73,10 +73,10 @@ get_header(); ?>
 
 					<div class="col col-sm-6 col-sm-pull-5">
 						<div class="biography">
-							<p><span class="leading-word">Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit. Nam a tincidunt erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam eget dictum lectus. Sed dapibus neque pulvinar leo dapibus suscipit. Nulla sit amet malesuada diam. Nulla non purus purus. Donec rutrum, risus eu tristique elementum, nisl lacus luctus elit, id condimentum nisi nunc sit amet est. Fusce blandit, metus a volutpat facilisis, velit urna aliquet tortor, ut molestie urna ante at enim. Praesent tempus metus eros, vel aliquam massa convallis id. Sed pulvinar et nisl at consectetur. Donec vitae nisi aliquet, pellentesque dui vitae, euismod orci.
-							</p>
-
-							<p>Ut eu hendrerit neque, sed mollis arcu. Donec at magna vel quam finibus congue elementum vel velit. Suspendisse auctor tempus risus non tristique. Cras lectus tellus, auctor non mi nec, vestibulum molestie erat. Suspendisse venenatis nisi vulputate, finibus sem eu, pellentesque dolor. Aenean elit nunc, facilisis ut lorem vel, euismod convallis tortor. Morbi felis enim, feugiat eu nibh vel, blandit euismod nisi. Proin viverra lorem vitae facilisis aliquet. Morbi vitae diam lectus. Nulla non arcu non tellus ullamcorper tristique ut quis urna.
+							<p><span class="leading-word">Hello!</span> My name is Neal.  I am a Ruby/Ruby on Rails, C# and web developer in Las Vegas, Nevada. I have been developing web applications, building, and configuring networks for 10 years in total and 3-4 professionally. I have experience building beautifully responsive web pages and web apps to fulfill a range of needs and functionality as well as experience with running and managing a multi workstation environment, from networking to workstation assembly. </p>
+							<p>
+								I am a quick self-motivated learner and I am able to adapt quickly to new concepts and technologies!
+							
 							</p>
 						</div>
 					</div>

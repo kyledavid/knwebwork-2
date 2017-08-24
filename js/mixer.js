@@ -1,30 +1,35 @@
+/* 
+
+Sets up controls and handles filtering of elements. Buttons within .mix-controls will provide filtering terms
+in data-filter attribute. Elements with the .mix class within a .mix-container submit themselves to filtering
+
+*/
+
 (function( $ ) {
 
     $(document).ready(function() {
 
         setUpMixer();
-        
 
-        function removeActiveClass() {
-            var controlButtons = document.querySelector('.mix-controls').querySelectorAll('button');
+        /* 
 
-            controlButtons.forEach(function(button) {
-                button.classList.remove('active');
-            })
-        }
+        Initial mixer setup. Find initial height of .mix-container and don't allow it to shrink in spite of items that may
+        be filtered. Attach events to .mix-control buttons and sort .mix elements by their taxonomy
+
+         */
 
         function setUpMixer() {
 
-            var container = document.getElementById('portfolio-items');
+            var container = document.querySelector('.mix-container');
             var containerHeight = container.offsetHeight;
-
-            console.log(containerHeight);
 
             container.style.minHeight = containerHeight + 'px';
 
             attachButtonEvents();
             sortContainerItems();
         }
+
+        /* Add event listeners for buttons within .mix-controls */
 
         function attachButtonEvents() {
 
@@ -37,6 +42,16 @@
                     this.classList.add('active');
                 });
             });
+        }
+
+        /* Remove the active class from any control buttons */
+
+        function removeActiveClass() {
+            var controlButtons = document.querySelector('.mix-controls').querySelectorAll('button');
+
+            controlButtons.forEach(function(button) {
+                button.classList.remove('active');
+            })
         }
 
         /* Sort all items in a .mix-container alphabetically by taxonomy data */
@@ -74,17 +89,20 @@
 
         }
 
-        /* Hide all items with the target filter data */
+        /* Show onlyitems with the target filter data */
 
         function applyFilter(filterString, rawFilter) {
 
             var mixItems = document.querySelectorAll('.mix');
             var filteredItems = $(mixItems).filter(filterString);
 
+            // Find all items not containing the current taxonomy in their data-tax attribute
+
             var otherItems = $(mixItems).filter(function(i, item) {
                 return item.dataset.tax != rawFilter;
             }); 
 
+            // Fade out all items not within the current taxonomy
 
             $(otherItems).each(function(i, item) {
                 $(item).fadeOut();
@@ -94,6 +112,8 @@
 
         }
 
+        /* Fade in all items belonging to the filtered list */
+
         function fadeInFiltered(filteredItems) {
             $(filteredItems).each(function(i, item) {
                 setTimeout(function() {
@@ -102,6 +122,8 @@
             });
         }
 
+        /* Hide all .mix items regardless of taxonomy */
+
         function hideAllItems() {
             var mixItems = document.querySelectorAll('.mix');
 
@@ -109,6 +131,8 @@
                 $(item).fadeOut();
             });
         }
+
+        /* Show all .mix items regardless of taxonomy */
 
         function showAllItems() {
             

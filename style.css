@@ -761,7 +761,8 @@ body {
   left: 0;
   right: 0;
   z-index: 1;
-  background-color: #333; }
+  background-color: #333;
+  border-bottom: 1px solid #000; }
 
 .site-branding {
   float: left; }
@@ -826,11 +827,17 @@ body {
   right: .2em;
   left: 1.2em; }
 
+@media (max-width: 1000px) {
+  .menu li {
+    font-size: 1.2em; } }
+
+@media (max-width: 800px) {
+  .logo-second {
+    display: none; } }
+
 @media (max-width: 700px) {
   .site-logo {
     line-height: 77.6px; }
-  .logo-second {
-    display: none; }
   .menu-toggle {
     background-color: transparent;
     float: right;
@@ -1008,7 +1015,7 @@ a:visited {
 # Page Styles
 --------------------------------------------------------------*/
 #primary {
-  min-height: 700px; }
+  min-height: 100vh; }
 
 #main {
   margin-top: 77.6px; }
@@ -1265,7 +1272,10 @@ a:visited {
     width: 500px;
     height: 333px; }
   .port-caption {
-    line-height: 333px; } }
+    line-height: 333px; }
+  .mix-controls {
+    text-align: center;
+    margin-top: 3em; } }
 
 @media (max-width: 650px) {
   .port-item {
