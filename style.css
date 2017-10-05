@@ -816,6 +816,7 @@ body {
     color: #eb625f; }
 
 .nav-underline {
+  visibility: hidden;
   position: absolute;
   top: 40px;
   left: 50%;
@@ -824,6 +825,7 @@ body {
   transition: right 400ms, left 400ms; }
 
 .nav-underline.active {
+  visibility: visible;
   right: .2em;
   left: 1.2em; }
 
