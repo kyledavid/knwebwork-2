@@ -792,7 +792,7 @@ body {
 #site-navigation {
   clear: none;
   float: right;
-  width: initial;
+  width: auto;
   line-height: 5.55em; }
 
 .menu li {
