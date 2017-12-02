@@ -1335,3 +1335,24 @@ span.comments-link {
     margin-bottom: 1em; }
   .entry-content p {
     font-size: 1.14em; }
+/*************************
+-------Accessibility-------
+*************************/
+.socials {
+  list-style-type: none;
+  margin: 0;
+}
+.socials a {
+  text-decoration: none;
+}
+.socials li {
+  float: left;
+}
+
+.reader-only 
+{position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;}
