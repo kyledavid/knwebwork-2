@@ -435,16 +435,6 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
-  color: royalblue; }
-
-a:visited {
-  color: purple; }
-
-a:hover,
-a:focus,
-a:active {
-  color: midnightblue; }
 
 a:focus {
   outline: thin dotted; }
@@ -1351,6 +1341,7 @@ span.comments-link {
 
 .reader-only 
 {position:absolute;
+color: #747474;
 left:-10000px;
 top:auto;
 width:1px;
@@ -1366,6 +1357,46 @@ overflow:hidden;}
 }
 
 .entry-content {
-  margin-top: 1em
-  font-size: .9em;
+  margin-top: 2.5em;
+}
+
+
+.entry-content a, 
+.entry-content a:link, 
+.entry-content a:visited,
+.entry-content a:hover,
+.entry-content a:active,
+h2.entry-title a,
+h2.entry-title a:link,
+h2.entry-title a:visited,
+h2.entry-title a:active, 
+h2.entry-title a:hover {
+  color: #009ede;
+}
+
+a,
+a:active,
+a:link,
+a:visited,
+a:hover,
+.entry-meta a, 
+.entry-meta a:link, 
+.entry-meta a:visited,
+.entry-meta a:hover,
+.entry-meta a:active,
+#secondary a, 
+#secondary a:link, 
+#secondary a:visited, 
+#secondary a:active,
+#secondary a:hover {
+  color: #007eb2;
+}
+
+#secondary ul {
+  margin-left: 0;
+  list-style-type: none;
+}
+
+#primary {
+  background-color: #fffeff;
 }
