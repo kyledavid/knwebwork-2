@@ -1356,3 +1356,16 @@ top:auto;
 width:1px;
 height:1px;
 overflow:hidden;}
+
+/*********************
+--------Blog Styling---
+**********************/
+
+.entry-title {
+  margin-bottom: .3em;
+}
+
+.entry-content {
+  margin-top: 1em
+  font-size: .9em;
+}
