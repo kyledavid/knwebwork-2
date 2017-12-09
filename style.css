@@ -988,17 +988,17 @@ body {
 .socials {
   float: right;
   font-size: 1.7em; }
-  .socials a,
-  .socials a:link
+  ul.socials a,
+  ul.socials a:link
 a:visited {
     margin-left: .6em;
     color: #ffca56; }
-  .socials a:hover {
+  ul.socials a:hover {
     color: #ffe2a2; }
 
 @media (max-width: 700px) {
-  .socials a,
-  .socials a:link
+  ul.socials a,
+  ul.socials a:link
 a:visited {
     margin-left: .2em;
     color: #ffca56; } }
@@ -1401,4 +1401,6 @@ a:hover,
   background-color: #fffeff;
 }
 
-.code {background-color: #eee;}
+code {background-color: #eee;
+color: #404040;
+font-size: 1em;}
