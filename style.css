@@ -1395,6 +1395,12 @@ a:hover,
 #secondary ul {
   margin-left: 0;
   list-style-type: none;
+  line-height: 1.5em;
+  padding-left: 1em;
+}
+
+#secondary li {
+  margin-top: .5em;
 }
 
 #primary {
@@ -1411,4 +1417,28 @@ pre {
     line-height: unset;
     margin-bottom: 1.5em;
     max-width: unset;
+}
+
+/**************
+Contact Styling
+**************/
+
+#contact-form button[type="submit"] {
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: .7em 2.1em;
+  border: 2px solid #ffca56;
+  border-radius: .7em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.4em;
+  letter-spacing: .24em;
+  color: #ffca56;
+  background: transparent;
+  transition: background-color 400ms ease-in-out;
+}
+
+#contact-form button[type="submit"]:hover {
+  background-color: #ffca56;
+  color: #fff;
 }
