@@ -1425,13 +1425,11 @@ Contact Styling
 
 #contact-form button[type="submit"] {
   text-transform: uppercase;
-  font-size: 1em;
   padding: .7em 2.1em;
   border: 2px solid #ffca56;
   border-radius: .7em;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  font-size: 1.4em;
   letter-spacing: .24em;
   color: #ffca56;
   background: transparent;
