@@ -12,7 +12,7 @@ get_header(); ?>
 					</div>
 					<div class="col col-md-offset-1 col-md-4 col-sm-5">
 						<div class="figure bio-figure">
-							<img src="http://www.knwebwork.com/wp-content/uploads/2017/05/kyle-steinle-2-e1494448447940.jpg" alt="Las Vegas web developer Kyle Steinle" title="Las Vegas web developer Kyle Steinle"/>
+							<img src="<?php echo get_template_directory_uri(); ?>/img/kyle-steinle-developer.jpg" alt="Las Vegas web developer Kyle Steinle" title="Las Vegas web developer Kyle Steinle"/>
 							<div class="fig-caption bio-caption">
 								Kyle Steinle
 							</div>
@@ -53,7 +53,7 @@ get_header(); ?>
 					</div>
 					<div class="col col-md-offset-1 col-md-4 col-sm-5 col-sm-push-6">
 						<div class="figure bio-figure">
-							<img src="http://www.knwebwork.com/wp-content/uploads/2017/05/neal-hill-vegas-developer.jpg" alt="Las Vegas web developer Neal Hill" title="Las Vegas web developer Neal Hill"/>
+							<img src="<?php echo get_template_directory_uri(); ?>/img/neal-hill-vegas-developer.jpg" alt="Las Vegas web developer Neal Hill" title="Las Vegas web developer Neal Hill"/>
 
 							<div class="fig-caption bio-caption">
 								Neal Hill
